@@ -1,30 +1,21 @@
 # adk-react-library
 
-> Made with create-react-library
+## Local Development
 
-[![NPM](https://img.shields.io/npm/v/adk-react-library.svg)](https://www.npmjs.com/package/adk-react-library) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+1. cd into target package directory and run `yarn start` to live rebuild updates.
+2. cd into `/example` directory and run `yarn start` to run CRA example application.
 
-## Install
+## Adding a Package
 
-```bash
-npm install --save adk-react-library
-```
+1. Create a new directory at the project root with the intended name of the package.
+2. Copy, paste and adapt the files from the `/poc-package-1` directory.
 
-## Usage
+## Publishing a Package
+1. cd into target package directory.
+2. Build package files.
+3. Login to NPM: `npm login`.
+4. Publish to NPM: `npm publish`.
 
-```jsx
-import React, { Component } from 'react'
-
-import MyComponent from 'adk-react-library'
-import 'adk-react-library/dist/index.css'
-
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
-}
-```
-
-## License
+Please note: all packages are currently published under a free private account, [jpdaprato](https://www.npmjs.com/~jpdaprato). Please reach out to jon@alldaykitchens.com to publish packages as and when needed until a paid ADK organization account is established.
 
 MIT © [virtualkitchenco](https://github.com/virtualkitchenco)
