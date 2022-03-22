@@ -1,0 +1,23 @@
+{
+  "name": "adk-poc-package-2",
+  "version": "1.0.0",
+  "description": "Used to develop multiple package POC",
+  "author": "virtualkitchenco",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.modern.js",
+  "source": "index.js",
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "build": "microbundle-crl --no-compress --format modern,cjs",
+    "start": "microbundle-crl watch --no-compress --format modern,cjs"
+  },
+  "devDependencies": {
+    "microbundle-crl": "^0.13.10"
+  },
+  "files": [
+    "dist"
+  ]
+}
