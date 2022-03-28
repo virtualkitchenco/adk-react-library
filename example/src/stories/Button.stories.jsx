@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { Button } from 'adk-react-library/button'
-import 'adk-react-library/button/dist/index.css'
+import { Button } from 'adk-react-library/Button'
+import 'adk-react-library/Button/dist/index.css'
 
 export default {
   title: 'Example/Button',
