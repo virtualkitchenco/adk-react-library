@@ -1,7 +1,7 @@
 {
-  "name": "adk-poc-package-1",
+  "name": "adk-button",
   "version": "1.0.0",
-  "description": "Used to develop multiple package POC",
+  "description": "ADK React Button",
   "author": "virtualkitchenco",
   "license": "MIT",
   "main": "dist/index.js",

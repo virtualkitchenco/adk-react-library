@@ -13,7 +13,7 @@ git clone https://github.com/virtualkitchenco/adk-react-library.git
 1. `yarn install` from root directory.
 2. cd into each target package directory and run `yarn install`
 3. Run `yarn start` from target package directory to live rebuild updates or `yarn build` if you plan for statically built package
-4. after installing and building all package dependancies, run CRA example app
+4. after installing and building all package dependencies, run CRA example app
 
 ```
 cd ../example
