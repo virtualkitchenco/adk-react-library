@@ -2,8 +2,11 @@
 
 ## Local Development
 
-1. cd into target package directory and run `yarn start` to live rebuild updates.
-2. cd into `/example` directory and run `yarn start` to run CRA example application.
+1. `yarn install` from root directory.
+2. cd into target package directory and run `yarn install`
+3. Run `yarn start` from target package directory to live rebuild updates.
+4. cd into `/example` directory and run `yarn install`
+5. Run `yarn start` from the `/example` directory to run the CRA example application.
 
 ## Adding a Package
 
