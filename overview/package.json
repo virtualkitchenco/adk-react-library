@@ -1,0 +1,23 @@
+{
+  "name": "adk-overview",
+  "version": "1.0.0",
+  "description": "Overview component with search form and table",
+  "author": "virtualkitchenco",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.modern.js",
+  "source": "index.js",
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "build": "microbundle-crl --no-compress --format modern,cjs --external=react,react-dom,react-is",
+    "start": "microbundle-crl watch --no-compress --format modern,cjs --external=react,react-dom,react-is"
+  },
+  "devDependencies": {
+    "microbundle-crl": "^0.13.10"
+  },
+  "files": [
+    "dist"
+  ]
+}
