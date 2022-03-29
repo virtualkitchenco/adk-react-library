@@ -24,7 +24,7 @@ yarn start
 ## Adding a Package
 
 1. Create a new directory at the project root with the intended name of the package
-2. Copy, paste and adapt the files from `/poc-package-1` directory
+2. Copy, paste and adapt the files from the `/poc-package-1` directory for an example with [MUI](https://mui.com/) integration or from `poc-package-2` for an example without that integration.
 
 ## Publishing a Package
 
