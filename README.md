@@ -24,14 +24,15 @@ yarn start
 ## Adding a Package
 
 1. Create a new directory at the project root with the intended name of the package
-2. Copy, paste and adapt the files from `/poc-package-1` directory
+2. Copy, paste and adapt the files from the `/poc-package-1` directory for an example with [MUI](https://mui.com/) integration or from `poc-package-2` for an example without that integration.
 
 ## Publishing a Package
 
 1. cd into target package directory
-2. Build package files
-3. Login to NPM `npm login`
-4. Publish to NPM `npm publish`
+2. Build package files: `yarn build`
+3. Bump version: `yarn version`
+4. Log in to NPM: `npm login`
+5. Publish to NPM: `npm publish`
 
 Note: all packages currently published under free private account, [jpdaprato](https://www.npmjs.com/~jpdaprato). Please reach out to jon@alldaykitchens.com to publish packages as and when needed until a paid ADK organization account is established.
 

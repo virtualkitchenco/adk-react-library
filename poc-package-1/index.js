@@ -1,6 +1,8 @@
 import React from 'react'
-import styles from './styles.module.css'
+import Typography from '@mui/material/Typography'
 
-export const POCPackage1 = ({ text }) => {
-  return <div className={styles.test}>POC Package #1: {text}</div>
-}
+export const POCPackage1 = ({ text }) => (
+  <Typography variant='h1' component='div'>
+    {text}
+  </Typography>
+)
