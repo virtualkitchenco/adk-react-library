@@ -29,9 +29,10 @@ yarn start
 ## Publishing a Package
 
 1. cd into target package directory
-2. Build package files
-3. Login to NPM `npm login`
-4. Publish to NPM `npm publish`
+2. Build package files: `yarn build`
+3. Bump version: `yarn version`
+4. Log in to NPM: `npm login`
+5. Publish to NPM: `npm publish`
 
 Note: all packages currently published under free private account, [jpdaprato](https://www.npmjs.com/~jpdaprato). Please reach out to jon@alldaykitchens.com to publish packages as and when needed until a paid ADK organization account is established.
 
