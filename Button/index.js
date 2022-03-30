@@ -1,6 +1,6 @@
 import React from 'react'
-import styles from './styles.module.css'
+import Button from '@mui/material/Button'
 
-export const Button = ({ label }) => {
-  return <button className={styles.test}>{label}</button>
-}
+export const ButtonComponent = ({ label }) => (
+  <Button variant='outlined'>{label}</Button>
+)
