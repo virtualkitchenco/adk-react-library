@@ -2,7 +2,7 @@ import React from 'react'
 
 import { POCPackage1 } from 'adk-react-library/poc-package-1'
 import { POCPackage2 } from 'adk-react-library/poc-package-2'
-import { Button } from 'adk-react-library/Button'
+import { ButtonComponent as Button } from 'adk-react-library/Button'
 import 'adk-react-library/poc-package-1/dist/index.css'
 import 'adk-react-library/poc-package-2/dist/index.css'
 import 'adk-react-library/Button/dist/index.css'
