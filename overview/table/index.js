@@ -3,7 +3,7 @@ import TableBody from '@mui/material/TableBody'
 import TableContainer from '@mui/material/TableContainer'
 import TableHead from '@mui/material/TableHead'
 import React from 'react'
-// import { styleTable } from '../utilities/customStyles'
+import { styleTable } from '../utilities/customStyles'
 import renderTableHeaders from '../utilities/table/renderTableHeaders'
 import renderTableRows from '../utilities/table/renderTableRows'
 import Pagination from '../pagination'
@@ -38,13 +38,11 @@ const OverviewTable = ({
   renderTableRowContent,
   rightAlignFinalColumn
 }) => {
-  // const classes = styleTable()
+  const classes = styleTable()
 
   return (
     <>
-      <TableContainer
-      // className={staticHeight ? classes.container : ''}
-      >
+      <TableContainer className={staticHeight ? classes.container : ''}>
         <Table aria-label='simple table'>
           <TableHead>
             {!!count &&
@@ -53,16 +51,16 @@ const OverviewTable = ({
                 handleSortClick,
                 true,
                 sort,
-                order.toLowerCase()
-                // classes
+                order.toLowerCase(),
+                classes
               )}
           </TableHead>
           <TableBody>
             {renderTableRows({
               results,
               renderContent: renderTableRowContent,
-              rightAlignFinalColumn
-              // classes
+              rightAlignFinalColumn,
+              classes
             })}
           </TableBody>
         </Table>

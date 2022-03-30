@@ -2,7 +2,7 @@ import Button from '@mui/material/Button'
 import TextField from '@mui/material/TextField'
 import cn from 'classnames'
 import React from 'react'
-// import { button } from '../utilities/customStyles'
+import { button } from '../utilities/customStyles'
 import s from './index.module.css'
 
 /**
@@ -29,7 +29,7 @@ const OverviewForm = ({
 }) => {
   const nameToValueMap = generateNameToValueMap()
   const multipleInputs = textFields.length > 1
-  // const buttonClasses = button()
+  const buttonClasses = button()
 
   const renderTextFields = () =>
     textFields.map((props, index) => {
@@ -57,13 +57,13 @@ const OverviewForm = ({
       )}
       <Button
         onClick={() => handleSubmit(updateSearch)}
-        // className={buttonClasses.primary}
+        className={buttonClasses.primary}
       >
         Search
       </Button>
       <Button
         onClick={handleReset}
-        // className={cn(buttonClasses.secondary, s.resetButton)}
+        className={cn(buttonClasses.secondary, s.resetButton)}
       >
         Reset
       </Button>
