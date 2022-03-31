@@ -32,10 +32,12 @@ export const defaultProps = {
 
 export const ButtonComponent = (props) => {
   const buttonProps = { ...defaultProps, ...props }
-  delete buttonProps.log
+  delete buttonProps.log // remove log prop from being passed to <Button/>
   const onClickFn = () => {
-    props.log()
     props.onClick()
+    if (props.log) {
+      props.log()
+    }
   }
   return (
     <Button {...buttonProps} onClick={onClickFn}>
