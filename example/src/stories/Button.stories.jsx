@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { ButtonComponent as Button } from 'adk-react-library/Button'
-import 'adk-react-library/Button/dist/index.css'
 
 export default {
   title: 'Example/Button',

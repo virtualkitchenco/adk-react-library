@@ -10,7 +10,11 @@ const Input = styled('input')({
   display: 'none'
 })
 
-export const ImageUploader = () => {
+export const ImageUploader = ({
+  onImageUploaded,
+  buttonLabel,
+  buttonVariant
+}) => {
   const [selectedImage, setSelectedImage] = useState(null)
   const [imageUrl, setImageUrl] = useState(null)
 
@@ -29,10 +33,13 @@ export const ImageUploader = () => {
             id='contained-button-file'
             multiple
             type='file'
-            onChange={(e) => setSelectedImage(e.target.files[0])}
+            onChange={(e) => {
+              setSelectedImage(e.target.files[0])
+              onImageUploaded && onImageUploaded(e.target.files[0].name)
+            }}
           />
-          <Button variant='contained' component='span'>
-            Upload Image
+          <Button variant={buttonVariant || 'contained'} component='span'>
+            {buttonLabel || 'Upload Image 2'}
           </Button>
         </label>
         <label htmlFor='icon-button-file'>
