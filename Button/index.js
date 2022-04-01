@@ -32,7 +32,7 @@ export const defaultProps = {
 }
 
 export const ButtonComponent = (props) => {
-  const buttonProps = { ...props, ...defaultProps }
+  const buttonProps = { ...defaultProps, ...props }
   delete buttonProps.log // remove log prop from being passed to <Button/>
   const onClickFn = () => {
     props.addAction('custom action created by adk-button component')
