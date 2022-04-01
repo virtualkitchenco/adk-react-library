@@ -2,11 +2,10 @@ import React from 'react'
 
 import { POCPackage1 } from 'adk-react-library/poc-package-1'
 import { POCPackage2 } from 'adk-react-library/poc-package-2'
-import { ButtonComponent as Button } from 'adk-react-library/Button'
+import { ButtonComponent as Button, buttonSx } from 'adk-react-library/Button'
 import { Table } from 'adk-react-library/table'
 import 'adk-react-library/poc-package-1/dist/index.css'
 import 'adk-react-library/poc-package-2/dist/index.css'
-import 'adk-react-library/Button/dist/index.css'
 
 const rows = [
   ['Frozen yoghurt', 159, 6.0, 24, 4.0],
@@ -27,7 +26,21 @@ const columns = [
 const App = () => {
   return (
     <div>
-      <Button label='A Button' />
+      <Button
+        className={buttonSx.blue}
+        log={() => console.log('To Do: DDog logging fn')}
+        onClick={() => alert('Blue Button was clicked')}
+      >
+        Blue Button
+      </Button>
+      <Button
+        sx={buttonSx.gray}
+        log={() => console.log('To Do: DDog logging fn')}
+        onClick={() => alert('Gray Button was clicked')}
+      >
+        Gray
+      </Button>
+
       <POCPackage1 text='Create React Library Example #1 😄' />
       <POCPackage2 text='Create React Library Example #2 😄' />
       <Table rows={rows} columns={columns} />
